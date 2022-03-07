@@ -57,8 +57,9 @@ window.onload = () => {
     });
 
     let url = window.location.pathname;
-
-    if(url == "/index.html"){
+    console.log(url);
+    
+    if(url == "https://djordje1620.github.io/airshop/index.html"){
 
         // ajax zahtev - socijalne mreze
         dohvatiPodatke("assets/data/drustveneMreze.json", function(result){
