@@ -58,7 +58,7 @@ window.onload = () => {
 
     let url = window.location.pathname;
     console.log(url);
-    // if(url == "/index.html"){
+     if(url == "/airshop/index.html"){
 
         // ajax zahtev - socijalne mreze
         dohvatiPodatke("assets/data/drustveneMreze.json", function(result){
@@ -75,7 +75,7 @@ window.onload = () => {
             ispispatika(result);
         })
         printCartLength();
-    // }
+     }
 
     // if( url == "/assets/pages/about.html"){
     //     dohvatiPodatke("../data/servisi.json", function(result){
