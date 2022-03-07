@@ -1,0 +1,18 @@
+[
+    {
+        "id":1,
+        "naziv": "Training sneakers",
+        "slika":{
+            "src": "muske-patike-nike-air-max-alpha-trainer-3.jpg",
+            "alt": "sneakers nike air max trainer"
+        }
+    },
+    {
+        "id":2,
+        "naziv": "Lifestyle sneakers",
+        "slika":{
+            "src": "category_img_02.jpg",
+            "alt": "lifestyle sneakers"
+        }
+    }
+]

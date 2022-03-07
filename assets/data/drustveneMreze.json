@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "href": "https://www.facebook.com/",
+        "class": "fab fa-facebook-f" 
+    },
+    {
+        "id": 2,
+        "href": "https://www.instagram.com/",
+        "class": "fab fa-instagram" 
+    },
+    {
+        "id": 3,
+        "href": "https://twitter.com/",
+        "class": "fab fa-twitter"
+    },
+    {
+        "id": 4,
+        "href": "https://www.linkedin.com/",
+        "class": "fab fa-linkedin"  
+    }
+]

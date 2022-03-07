@@ -1,0 +1,23 @@
+@media (max-width: 766px) {
+    #katMeseca{
+        display: block !important;
+    }
+   }
+
+.succes{
+    border-color: white;
+    box-shadow: 1px 1px 1px 1px rgb(6, 196, 6);
+}
+.err{
+    border-color: white;
+    box-shadow: 1px 1px 1px 1px red;
+}
+.r1 td{
+    padding: 10px;
+}
+.timetable_sub{
+    width: 100%;
+}
+table thead tr{
+    background-color: rgb(241, 239, 236);
+}

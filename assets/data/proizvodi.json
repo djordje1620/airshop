@@ -1,0 +1,261 @@
+[
+    {
+        "id":1,
+        "naziv": "Adidas FORUM BOLD",
+        "pol": [2],
+        "kategorija": [2],
+        "brend": [2],
+        "slika":{
+            "src": "adidas_patike_forumBold_woman.jpg",
+            "alt": "adidas woman sneakers"
+        },
+        "cena":{
+            "aktuelnaCena": 169,
+            "staraCena": 189
+        },
+        "akcija": true,
+        "opis": "Take your look to the next level with adidas Forum Bold women's lifestyle sneakers."
+    },
+    {
+        "id":2,
+        "naziv": "Nike VAPORMAX 2021",
+        "pol": [1],
+        "kategorija": [2],
+        "brend": [1],
+        "slika":{
+            "src": "patikeNike2021_1.jpg",
+            "alt": "nike air max 90"
+        },
+        "cena":{
+            "aktuelnaCena": 229,
+            "staraCena": 259
+        },
+        "akcija": true,
+        "opis": "Nike Air Vapormax 2021 are top men's sneakers from the Air Max line. It captivates with its comfort and ease of every step. Ultra-modern design combines sporty functionality."
+    },
+    {
+        "id":3,
+        "naziv": "Nike Air Max 90",
+        "pol": [1],
+        "kategorija": [2],
+        "brend": [1],
+        "slika":{
+            "src": "patikeNike90_2.jpg",
+            "alt": "nike air max 90"
+        },
+        "cena":{
+            "aktuelnaCena": 179,
+            "staraCena": 199
+        },
+        "akcija": true,
+        "opis": "Timeless, versatile, with clean design lines, Nike Air Max 90 men's sneakers announce their return in style. Originally designed for optimal running performancep."
+    },
+    {
+        "id":4,
+        "naziv": "Nike Air Force",
+        "pol": [1],
+        "kategorija": [2],
+        "brend": [1],
+        "slika":{
+            "src": "patikeNike90_3.jpg",
+            "alt": "nike air max 90"
+        },
+        "cena":{
+            "aktuelnaCena": 199,
+            "staraCena": false
+        },
+        "akcija": false
+    },
+    {
+        "id":5,
+        "naziv": "Nike Air Max 90",
+        "pol": [1],
+        "kategorija": [2],
+        "brend": [1],
+        "slika":{
+            "src": "patikeNike90_1.jpg",
+            "alt": "nike air max 90"
+        },
+        "cena":{
+            "aktuelnaCena": 189,
+            "staraCena": 219
+        },
+        "akcija": true
+    },
+    {
+        "id":6,
+        "naziv": "Adidas FORUM LOW",
+        "pol": [2],
+        "kategorija": [2],
+        "brend": [2],
+        "slika":{
+            "src": "patikeAdidas_5Z.jpg",
+            "alt": "adidas sneakers forum low woman"
+        },
+        "cena":{
+            "aktuelnaCena": 119,
+            "staraCena": 139
+        },
+        "akcija": true
+    },
+    {
+        "id":7,
+        "naziv": "NIKE Blazer Low ",
+        "pol": [2],
+        "kategorija": [2],
+        "brend": [1],
+        "slika":{
+            "src": "patikeNike_2Z.jpg",
+            "alt": "nike sneakers blazer low woman"
+        },
+        "cena":{
+            "aktuelnaCena": 121,
+            "staraCena": false
+        },
+        "akcija": false
+    },
+    {
+        "id":8,
+        "naziv": "Adidas Forum Tech",
+        "pol": [1],
+        "kategorija": [1],
+        "brend": [2],
+        "slika":{
+            "src": "patikaZaTreningAdidas.jpg",
+            "alt": "adidas Forum Tech za trening"
+        },
+        "cena":{
+            "aktuelnaCena": 89,
+            "staraCena": 119
+        },
+        "akcija": true
+    },
+    {
+        "id":9,
+        "naziv": "Nike Air Max",
+        "pol": [3],
+        "kategorija":[1],
+        "brend": [1],
+        "slika":{
+            "src": "patikaZaTreningNike.jpg",
+            "alt": "nike sneakers training unisex"
+        },
+        "cena":{
+            "aktuelnaCena": 139,
+            "staraCena": false
+        },
+        "akcija": true
+    },
+    {
+        "id":10,
+        "naziv": "Nike Air Max 95",
+        "pol": [1],
+        "kategorija": [2],
+        "brend": [1],
+        "slika":{
+            "src": "patikeNike95_2.jpg",
+            "alt": "nike air max 95 men"
+        },
+        "cena":{
+            "aktuelnaCena": 189,
+            "staraCena": false
+        },
+        "akcija": false
+    },
+    {
+        "id": 11,
+        "naziv": "Puma RS-Z DOP",
+        "pol": [3],
+        "kategorija": [1],
+        "brend": [3],
+        "slika":{
+            "src": "pumaZenskeZaTrening.jpg",
+            "alt": "NEW balance sneakers woman"
+        },
+        "cena":{
+            "aktuelnaCena": 169,
+            "staraCena": false
+        },
+        "akcija": false
+    },
+    {
+        "id":12,
+        "naziv": "New Balance Sneakers",
+        "pol": [1],
+        "kategorija": [1],
+        "brend": [4],
+        "slika":{
+            "src": "newBalancePatike.jfif",
+            "alt": "NEW balance sneakers "
+        },
+        "cena":{
+            "aktuelnaCena": 139,
+            "staraCena": false
+        },
+        "akcija": false
+    },
+    {
+        "id": 13,
+        "naziv": "New Balance Sneakers",
+        "pol": [2],
+        "kategorija": [2],
+        "brend": [4],
+        "slika":{
+            "src": "newBalancePatikeZ.jpg",
+            "alt": "NEW balance sneakers woman"
+        },
+        "cena":{
+            "aktuelnaCena": 129,
+            "staraCena": false
+        },
+        "akcija": false
+    },
+    {
+        "id": 14,
+        "naziv": "Converse Chuck 70",
+        "pol": [2],
+        "kategorija": [2],
+        "brend": [5],
+        "slika":{
+            "src": "conversePatike.jpg",
+            "alt": "NEW balance sneakers woman"
+        },
+        "cena":{
+            "aktuelnaCena": 97,
+            "staraCena": 129
+        },
+        "akcija": true
+    },
+    {
+        "id": 15,
+        "naziv": "Fila Disruptor",
+        "pol": [2],
+        "kategorija": [2],
+        "brend": [6],
+        "slika":{
+            "src": "filaPatikaZenska.jpg",
+            "alt": "FIla woman filaDisruptor"
+        },
+        "cena":{
+            "aktuelnaCena": 169,
+            "staraCena": false
+        },
+        "akcija": false
+    },
+    {
+        "id": 16,
+        "naziv": "Nike Air Max 95",
+        "pol": [1],
+        "kategorija": [2],
+        "brend": [1],
+        "slika":{
+            "src": "patikeNike95_3.jpg",
+            "alt": "nike air max 95 men SE"
+        },
+        "cena":{
+            "aktuelnaCena": 219,
+            "staraCena": false
+        },
+        "akcija": false
+    }
+]

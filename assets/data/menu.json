@@ -1,0 +1,22 @@
+[
+    {
+        "id":1,
+        "href": "index.html",
+        "naziv": "Home"
+    },
+    {
+        "id":2,
+        "href": "about.html",
+        "naziv": "About"
+    },
+    {
+        "id":3,
+        "href": "shop.html",
+        "naziv": "Shop"
+    },
+    {
+        "id":4,
+        "href": "contact.html",
+        "naziv": "Contact"
+    }
+]

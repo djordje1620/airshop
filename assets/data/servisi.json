@@ -1,0 +1,22 @@
+[
+    {
+        "id":1,
+        "naziv": "Delivery Services",
+        "icon": "fa fa-truck fa-lg"
+    },
+    {
+        "id":2,
+        "naziv": "Shipping & Return",
+        "icon": "fas fa-exchange-alt"
+    },
+    {
+        "id":3,
+        "naziv": "Promotion",
+        "icon": "fa fa-percent"
+    },
+    {
+        "id":4,
+        "naziv": "24 Hours Service",
+        "icon": "fa fa-user"
+    }
+]

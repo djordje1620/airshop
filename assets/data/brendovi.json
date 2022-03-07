@@ -1,0 +1,50 @@
+[
+    {
+        "id":1,
+        "naziv": "Nike",
+        "slika":{
+            "src": "nikeBrend.png",
+            "alt": "Brand Logo || NIKE"
+        }
+    },
+    {
+        "id":2,
+        "naziv": "Adidas",
+        "slika":{
+            "src": "adidasBrend.png",
+            "alt": "Brand Logo || ADIDAS"
+        }
+    },
+    {
+        "id":3,
+        "naziv": "Puma",
+        "slika":{
+            "src": "filaBrend.png",
+            "alt": "Brand Logo || FILA"
+        }
+    },
+    {
+        "id":4,
+        "naziv": "New Balance",
+        "slika":{
+            "src": "puma-logo-crni.png",
+            "alt": "Brand Logo || PUMA"
+        }
+    },
+    {
+        "id":5,
+        "naziv": "Converse",
+        "slika":{
+            "src": "nbBrend.png",
+            "alt": "Brand Logo || NB"
+        }
+    },
+    {
+        "id":6,
+        "naziv": "Fila",
+        "slika":{
+            "src": "converse-novi-Brend.png",
+            "alt": "Brand Logo || CONVERSE"
+        }
+    }
+]
