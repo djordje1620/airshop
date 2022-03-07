@@ -77,89 +77,89 @@ window.onload = () => {
         printCartLength();
      }
 
-    // if( url == "/assets/pages/about.html"){
-    //     dohvatiPodatke("../data/servisi.json", function(result){
-    //         ispisServisa(result);
-    //     })
-    // }
+    if( url == "/airshop/assets/pages/about.html"){
+       dohvatiPodatke("../data/servisi.json", function(result){
+           ispisServisa(result);
+       })
+    }
 
-    // if( url == "/assets/pages/shop.html"){
-    //     dohvatiPodatke("../data/proizvodi.json", function(result){
-    //         ispisProizvoda(result);
-    //         setItemToLocalStorage("allProducts", result);
-    //     })
-    //     dohvatiPodatke("../data/brendovi.json", function(result){
-    //         ispisBP(result, "brend", "brend");
-    //     })
-    //     dohvatiPodatke("../data/kategorije.json", function(result){
-    //         ispisBP(result, "kategorije", "kategorije");
-    //     })
-    //     dohvatiPodatke("../data/pol.json", function(result){
-    //         ispisBP(result, "pol", "pol");
-    //         pol = result;
-    //     })
+    if( url == "/airshop/assets/pages/shop.html"){
+        dohvatiPodatke("../data/proizvodi.json", function(result){
+            ispisProizvoda(result);
+            setItemToLocalStorage("allProducts", result);
+        })
+        dohvatiPodatke("../data/brendovi.json", function(result){
+            ispisBP(result, "brend", "brend");
+        })
+        dohvatiPodatke("../data/kategorije.json", function(result){
+            ispisBP(result, "kategorije", "kategorije");
+        })
+        dohvatiPodatke("../data/pol.json", function(result){
+            ispisBP(result, "pol", "pol");
+            pol = result;
+        })
         
-    // }
-    // if(url == "/assets/pages/shop.html" || url == "/assets/pages/contact.html" || url == "/assets/pages/about.html" || url == "/assets/pages/check.html"){
+    }
+    if(url == "/airshop/assets/pages/shop.html" || url == "/assets/pages/contact.html" || url == "/assets/pages/about.html" || url == "/assets/pages/check.html"){
 
-    //     // ajax zahtev - socijalne mreze
-    //     dohvatiPodatke("../data/drustveneMreze.json", function(result){
-    //         ispisDrustvenihMreza(result, "zaglavlje", "#drustveneMreze");
-    //         ispisDrustvenihMreza(result, "futer", "#drustveneMreze2");
-    //     })
-    //     dohvatiPodatke("../data/menu.json",function(result){
-    //         ispisMenija(result);
-    //     })
-    //     printCartLength();
+        // ajax zahtev - socijalne mreze
+        dohvatiPodatke("../data/drustveneMreze.json", function(result){
+            ispisDrustvenihMreza(result, "zaglavlje", "#drustveneMreze");
+            ispisDrustvenihMreza(result, "futer", "#drustveneMreze2");
+        })
+        dohvatiPodatke("../data/menu.json",function(result){
+            ispisMenija(result);
+        })
+        printCartLength();
         
-    // }
+    }
 
-    // if(url == "/assets/pages/shop.html" || url == "/assets/pages/about.html"){
-    //     dohvatiPodatke("../data/brendovi.json", function(result){
-    //         ispisBrendaAbSh(result);
-    //     })
-    // }
-    // if(url == "/assets/pages/check.html"){
-    //     let productsFromCart = getItemFromLocalStorage("cart");
+    if(url == "/airshop/assets/pages/shop.html" || url == "/assets/pages/about.html"){
+        dohvatiPodatke("../data/brendovi.json", function(result){
+            ispisBrendaAbSh(result);
+        })
+    }
+    if(url == "/assets/pages/check.html"){
+        let productsFromCart = getItemFromLocalStorage("cart");
 
-    //     if(productsFromCart == 0){
-    //         showEmptyCart();
-    //     }
-    //     else{
-    //         showCart();
-    //     }
-    //     printCartLength();
+        if(productsFromCart == 0){
+            showEmptyCart();
+        }
+        else{
+            showCart();
+        }
+        printCartLength();
 
-    // }
-    // if(url == "/assets/pages/contact.html"){
+    }
+    if(url == "/airshop/assets/pages/contact.html"){
 
-    //     document.getElementById("dugme").addEventListener('click', function() {
-    //         var ime = document.getElementById("inputName");
-    //         var email = document.getElementById("inputEmail");
-    //         var subject = document.getElementById("inputSubject");
-    //         var message = document.getElementById("inputMessage");
+        document.getElementById("dugme").addEventListener('click', function() {
+            var ime = document.getElementById("inputName");
+            var email = document.getElementById("inputEmail");
+            var subject = document.getElementById("inputSubject");
+            var message = document.getElementById("inputMessage");
            
 
-    //         if(ime.value == "" || email.value == "" || subject.value == "" || message.value == ""){
-    //             alert("polja ne smeju biti prazna");
-    //             ime.classList.add("err");
-    //             email.classList.add("err");
-    //             subject.classList.add("err");
-    //             message.classList.add("err");
-    //         }
-    //         else{
-    //             ime.value = "";
-    //             email.value = "";
-    //             subject.value = "";
-    //             message.value = "";
-    //             ime.classList.remove("succes");
-    //             email.classList.remove("succes");
-    //             subject.classList.remove("succes");
-    //             message.classList.remove("succes");
-    //         }
-    //     });
+            if(ime.value == "" || email.value == "" || subject.value == "" || message.value == ""){
+                alert("polja ne smeju biti prazna");
+                ime.classList.add("err");
+                email.classList.add("err");
+                subject.classList.add("err");
+                message.classList.add("err");
+            }
+            else{
+                ime.value = "";
+                email.value = "";
+                subject.value = "";
+                message.value = "";
+                ime.classList.remove("succes");
+                email.classList.remove("succes");
+                subject.classList.remove("succes");
+                message.classList.remove("succes");
+            }
+        });
      
-    // }
+    }
 
 }
 
