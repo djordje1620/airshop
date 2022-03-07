@@ -57,7 +57,7 @@ window.onload = () => {
     });
 
     let url = window.location.pathname;
-
+    console.log(url);
     // if(url == "/index.html"){
 
         // ajax zahtev - socijalne mreze
