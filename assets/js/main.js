@@ -100,7 +100,7 @@ window.onload = () => {
         })
         
     }
-    if(url == "/airshop/assets/pages/shop.html" || url == "/assets/pages/contact.html" || url == "/assets/pages/about.html" || url == "/assets/pages/check.html"){
+    if(url == "/airshop/assets/pages/shop.html" || url == "/airshop/assets/pages/contact.html" || url == "/airshop/assets/pages/about.html" || url == "/airshop/pages/check.html"){
 
         // ajax zahtev - socijalne mreze
         dohvatiPodatke("../data/drustveneMreze.json", function(result){
@@ -114,12 +114,12 @@ window.onload = () => {
         
     }
 
-    if(url == "/airshop/assets/pages/shop.html" || url == "/assets/pages/about.html"){
+    if(url == "/airshop/assets/pages/shop.html" || url == "/airshop/assets/pages/about.html"){
         dohvatiPodatke("../data/brendovi.json", function(result){
             ispisBrendaAbSh(result);
         })
     }
-    if(url == "/assets/pages/check.html"){
+    if(url == "/airshop/assets/pages/check.html"){
         let productsFromCart = getItemFromLocalStorage("cart");
 
         if(productsFromCart == 0){
@@ -192,17 +192,17 @@ function ispisMenija(menu){
     
     html += `<ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">`;
 
-    if(url == "/index.html"){
+    if(url == "/airshop/index.html"){
 
         for(var m of menu){
             if(m.naziv == 'Home'){
                 html += `<li class="nav-item">
-                <a class="nav-link" href="${m.href}">${m.naziv}</a>
+                <a class="nav-link" href="/airshop/${m.href}">${m.naziv}</a>
             </li>`;
             }
             if(m.naziv != 'Home'){
                 html += `<li class="nav-item">
-                            <a class="nav-link" href="assets/pages/${m.href}">${m.naziv}</a>
+                            <a class="nav-link" href="/airshop/assets/pages/${m.href}">${m.naziv}</a>
                         </li>`;
             }
         }
