@@ -402,7 +402,6 @@ function printDataFromCart(products){
     <table class="timetable_sub">
         <thead>
             <tr>
-                <th></th>
                 <th>Product</th>
                 <th>Product Name</th>
                 <th>Base Price</th>
@@ -425,7 +424,6 @@ function printDataFromCart(products){
 
         function generateTr(p) {
             return  `<tr class="r1">
-                        <td class="invert">${p.id}</td>
                         <td class="invert-image">
                             <a href="single.html">
                                 <img src="../img/${p.slika.src}" style='height:100px' alt="${p.slika.alt}" class="img-responsive" />
