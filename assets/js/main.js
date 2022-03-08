@@ -207,7 +207,7 @@ function ispisMenija(menu){
             }
         }
         html += `<li class="nav-item">
-                    <a class="nav-link" href="https://djordje1620.github.io/portfolio.github.io/portfolio/">About author</a>
+                    <a class="nav-link" target="_blank" href="https://djordje1620.github.io/portfolio.github.io/portfolio/">About author</a>
                 </li></ul>`;
         document.getElementById("meni").innerHTML = html;
     }
@@ -226,7 +226,7 @@ function ispisMenija(menu){
             }
         }
         html += `<li class="nav-item">
-                    <a class="nav-link" href="https://djordje1620.github.io/portfolio.github.io/portfolio/">About author</a>
+                    <a class="nav-link" target="_blank" href="https://djordje1620.github.io/portfolio.github.io/portfolio/">About author</a>
                 </li></ul>`;
         document.getElementById("meni").innerHTML = html;
     }
