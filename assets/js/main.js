@@ -206,9 +206,12 @@ function ispisMenija(menu){
                         </li>`;
             }
         }
-        html += `</ul>`;
+        html += `<li class="nav-item">
+                    <a class="nav-link" href="https://djordje1620.github.io/portfolio.github.io/portfolio/">About author</a>
+                </li></ul>`;
         document.getElementById("meni").innerHTML = html;
     }
+    
     else{
         for(var m of menu){
             if(m.naziv == 'Home'){
@@ -222,7 +225,9 @@ function ispisMenija(menu){
                         </li>`;
             }
         }
-        html += `</ul>`;
+        html += `<li class="nav-item">
+                    <a class="nav-link" href="https://djordje1620.github.io/portfolio.github.io/portfolio/">About author</a>
+                </li></ul>`;
         document.getElementById("meni").innerHTML = html;
     }
 }
