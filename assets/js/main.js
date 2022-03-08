@@ -100,7 +100,7 @@ window.onload = () => {
         })
         
     }
-    if(url == "/airshop/assets/pages/shop.html" || url == "/airshop/assets/pages/contact.html" || url == "/airshop/assets/pages/about.html" || url == "/airshop/assets/pages/check.html"){
+    if(url == "/airshop/assets/pages/shop.html" || url == "/airshop/assets/pages/check.html" || url == "/airshop/assets/pages/contact.html" || url == "/airshop/assets/pages/about.html"){
 
         // ajax zahtev - socijalne mreze
         dohvatiPodatke("../data/drustveneMreze.json", function(result){
