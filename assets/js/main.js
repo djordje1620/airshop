@@ -58,7 +58,7 @@ window.onload = () => {
 
     let url = window.location.pathname;
     console.log(url);
-     if(url == "/airshop/index.html"){
+     if(url == "/airshop/index.html" || url =="/airshop/"){
 
         // ajax zahtev - socijalne mreze
         dohvatiPodatke("assets/data/drustveneMreze.json", function(result){
