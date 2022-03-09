@@ -98,7 +98,6 @@ window.onload = () => {
             ispisBP(result, "pol", "pol");
             pol = result;
         })
-        
     }
     if(url == "/airshop/assets/pages/shop.html" || url == "/airshop/assets/pages/check.html" || url == "/airshop/assets/pages/contact.html" || url == "/airshop/assets/pages/about.html"){
 
@@ -129,7 +128,7 @@ window.onload = () => {
             showCart();
         }
         printCartLength();
-
+        
     }
     if(url == "/airshop/assets/pages/contact.html"){
 
@@ -268,7 +267,7 @@ function ispisProizvoda(data){
                             <img class="card-img rounded-0 img-fluid" src="../img/${p.slika.src}">
                             <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                 <ul class="list-unstyled">
-                                    <input type="button" data-id=${p.id} value="Add to cart" class="button bg-success text-white btn add-to-cart"/>
+                                    <input type="button" id="succes" onclick='prikaziPoruku()' data-id=${p.id} value="Add to cart" class="button bg-success text-white btn add-to-cart"/>
                                 </ul>
                             </div>
                         </div>
@@ -283,10 +282,16 @@ function ispisProizvoda(data){
     document.getElementById('filter').addEventListener('change', filterProizvod);
     $('.add-to-cart').click(addToCart);
 }
+function prikaziPoruku() {
+    let poruka = $("#ispisPoruke");
+    poruka.removeClass("skrivenaPoruka");
+    setTimeout(function () {
+    poruka.addClass("skrivenaPoruka");
+    }, 3000);
+    }
 // funkcija za dodavanje proizvoda u korpu
 function addToCart(){
     let idProduct = $(this).data("id");
-    
     let productsFromCart = getItemFromLocalStorage("cart");
 
     if(productsFromCart){
@@ -298,29 +303,23 @@ function addToCart(){
             addNewProductToCart();
             printCartLength()
         }
-
     }
     else{
         // kod kada je korpa prazna
         addFirstProductToCart();
         printCartLength()
     }
-
-
     function addFirstProductToCart(){
         let products = [];
         products[0] = {
             id: idProduct,
             qty: 1
         }
-
         setItemToLocalStorage("cart", products);
     }
-
     function productIsAlreadyInCart(){
         return productsFromCart.filter(p => p.id == idProduct).length;
     }
-
     function updateQty(){
         let productsFromLS = getItemFromLocalStorage("cart");
 
@@ -330,7 +329,6 @@ function addToCart(){
                 break;
             }
         }
-
         setItemToLocalStorage("cart", productsFromLS);
     }
 

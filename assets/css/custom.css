@@ -21,3 +21,11 @@
 table thead tr{
     background-color: rgb(241, 239, 236);
 }
+.skrivenaPoruka {
+    display: none;
+}
+.poruka {
+    color: green;
+    z-index: 1;
+}
+    
