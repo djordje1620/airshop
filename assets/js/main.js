@@ -191,7 +191,7 @@ function ispisMenija(menu){
     
     html += `<ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">`;
 
-    if(url == "/airshop/index.html"){
+    if(url == "/airshop/index.html" || url == "/airshop/"){
 
         for(var m of menu){
             if(m.naziv == 'Home'){
