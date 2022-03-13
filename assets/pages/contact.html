@@ -110,10 +110,12 @@
                     <div class="form-group col-md-6 mb-3">
                         <label for="inputName">Name</label>
                         <input type="text" class="form-control mt-1" id="inputName" onblur="nameValidate()" name="name" placeholder="Name" />
+                        <p id="greskaName" class="text-danger p-1"></p>
                     </div>
                     <div class="form-group col-md-6 mb-3">
                         <label for="inputEmail">Email</label>
                         <input type="email" class="form-control mt-1" id="inputEmail" onblur="emailValidate()" name="email" placeholder="xxxx@xxx.xxx" />
+                        <p id="greskaEmail" class="text-danger p-1"></p>
                     </div>
                 </div>
                 <div class="mb-3">
@@ -126,6 +128,7 @@
                     <p id="greska" class="text-danger"></p>
                 </div>
                 <div class="row">
+                    <div id="greskaPraznaPolja"></div>
                     <div class="col text-end mt-2">
                         <input type="button" value="Let's Talk" id="dugme" />
                     </div>

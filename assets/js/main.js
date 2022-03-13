@@ -130,23 +130,24 @@ window.onload = () => {
         printCartLength();
         
     }
-    if(url == "/airshop/assets/pages/contact.html"){
+    if(url == "/airshop//assets/pages/contact.html"){
 
         document.getElementById("dugme").addEventListener('click', function() {
             var ime = document.getElementById("inputName");
             var email = document.getElementById("inputEmail");
             var subject = document.getElementById("inputSubject");
             var message = document.getElementById("inputMessage");
-           
+            document.getElementById("greskaPraznaPolja").innerHTML = "<p class='text-danger'>Fields must not be blank, please fill in all fields</p>";
 
             if(ime.value == "" || email.value == "" || subject.value == "" || message.value == ""){
-                alert("polja ne smeju biti prazna");
+                document.getElementById()
                 ime.classList.add("err");
                 email.classList.add("err");
                 subject.classList.add("err");
                 message.classList.add("err");
             }
-            else{
+            else if(nameValidate() && emailValidate() && subjectValidate() && messageValidate()){
+                document.getElementById("greskaPraznaPolja").innerHTML = "<p class='text-success'>You have successfully sent the message</p>";
                 ime.value = "";
                 email.value = "";
                 subject.value = "";
@@ -629,9 +630,13 @@ function nameValidate() {
     if(erIme.test(ime.value)){
         ime.classList.remove("err");
         ime.classList.add("succes");
+        document.getElementById("greskaName").innerHTML = "";
+        return true;
     }else{
         ime.classList.remove("succes");
         ime.classList.add("err");
+        document.getElementById("greskaName").innerHTML = "Example: John";
+        return false;
     }
 }
 
@@ -641,12 +646,15 @@ function emailValidate() {
     var erEmail = new RegExp(/^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2-8})?$/);
 
     if(erEmail.test(email.value)){
-        email.classList.remove("err");
+        email.classList.remove("err");          
         email.classList.add("succes");
+        document.getElementById("greskaEmail").innerHTML = "";
+
         return true;
     }else{
         email.classList.remove("succes");
         email.classList.add("err");
+        document.getElementById("greskaEmail").innerHTML = "Example: john@gmail.com";
         return false;
     }
 }
@@ -657,9 +665,11 @@ function subjectValidate() {
     if(subject.value.length > 5){
         subject.classList.remove("err");
         subject.classList.add("succes");
+        return true;
     }else{
         subject.classList.remove("succes");
         subject.classList.add("err");
+        return false;
     }
 }
 // provera message
@@ -671,10 +681,12 @@ function messageValidate(){
         message.classList.remove("err");
         message.classList.add("succes");
         tekst.innerHTML= "";
+        return true;
     }
     else{
         message.classList.remove("succes");
         tekst.innerHTML= "Character number must be greater than 50";
         message.classList.add("err");
+        return false;
     }
 }
