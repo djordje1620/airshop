@@ -383,18 +383,22 @@ function showCart(){
     let productsFromCart = getItemFromLocalStorage("cart");
     let htsml = ""
 
-    let productsForDisplay = allProducts.filter(product =>{
+    if(productsFromCart == undefined){
+        showEmptyCart();
+    }
+    else{
+        let productsForDisplay = allProducts.filter(product =>{
         
-        for(let productLS of productsFromCart){
-            if(product.id == productLS.id){
-                product.qty = productLS.qty
-                return true;
+            for(let productLS of productsFromCart){
+                if(product.id == productLS.id){
+                    product.qty = productLS.qty
+                    return true;
+                }
             }
-        }
-        return false;
+            return false;
     })
     printDataFromCart(productsForDisplay);
-    
+    }
 }
 function printDataFromCart(products){
     let html = `
@@ -417,7 +421,7 @@ function printDataFromCart(products){
 
         html +=`</tbody>
             </table>
-            <div><input id="btn" type="button" class="btn btn-success mx-4" name="posalji" onclick="potvrdi()" value="Confirm"/></div>`;
+            <div><input id="btn" type="button" class="btn btn-success mx-4" name="posalji" onclick="potvrdi()" value="Complete the purchase"/></div>`;
 
         $("#content").html(html);
 
@@ -439,7 +443,6 @@ function printDataFromCart(products){
                         </td>
                     </tr>`;
         }
-        
 }
 function removeFromCart(id) {
     let products = getItemFromLocalStorage("cart");
@@ -455,11 +458,10 @@ function removeFromCart(id) {
 }
 function potvrdi(){
     showEmptyCart();
-    document.getElementById("potvrda").innerHTML = "<p class='alert alert-success'>You have successfully ordered your products.</p>";
+    document.getElementById("potvrda").innerHTML = `<p class='alert alert-success'>You have successfully ordered your products.</p>`;
+    localStorage.removeItem("cart");
     printCartLength();
 }
-
-
 
 function filterProizvod() {
     dohvatiPodatke("../data/proizvodi.json", function(result){
