@@ -130,7 +130,7 @@ window.onload = () => {
         printCartLength();
         
     }
-    if(url == "/airshop//assets/pages/contact.html"){
+    if(url == "/airshop/assets/pages/contact.html"){
 
         document.getElementById("dugme").addEventListener('click', function() {
             var ime = document.getElementById("inputName");
